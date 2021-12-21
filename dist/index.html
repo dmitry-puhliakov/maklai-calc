@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Page title</title>
+  </head>
+  <body>
+    <main class="main">
+      <form action="/" class="calc">
+  <h1 class="calc__title">Simple calculator</h1>
+
+  <div class="calc__field field">
+    <label class="field__label" for="num1">
+      Input first number
+    </label>
+
+    <input class="field__input" type="number" id="num1">
+
+    <p class="field__wrn">please, input number before calculate</p>
+  </div>
+
+  <div class="calc__field field">
+    <label class="field__label" for="operation">
+      Choose operation
+    </label>
+
+    <select class="field__input" id='operation'>
+      <option value="">--select--</option>
+      <option value="add">add "+"</option>
+      <option value="subtract">subtract "&ndash;"</option>
+      <option value="multiply">multiply "&bull;"</option>
+      <option value="divide">divide "&#247;"</option>
+    </select>
+
+    <p class="field__wrn">please, choose operation before calculate</p>
+  </div>
+
+  <div class="calc__field field">
+    <label class="field__label" for="num2">
+      Input second number
+    </label>
+
+    <input class="field__input" type="number" id="num2">
+
+    <p class="field__wrn">please, input number before calculate</p>
+  </div>
+
+  <div class="calc__btn">
+    <button type="submit">Calculate</button>
+    <button type="button">Clear</button>
+  </div>
+
+  <div class="calc__result">0</div>
+</form>
+
+    </main>
+    <script type="text/javascript" src="js/main.min.js"></script>
+  </body>
+</html>

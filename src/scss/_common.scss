@@ -1,0 +1,28 @@
+* {
+  color: $c-main;
+}
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+
+  @include onMobile {
+    font-size: 8px;
+  }
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background: antiquewhite;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

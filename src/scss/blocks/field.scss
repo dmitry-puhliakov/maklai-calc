@@ -1,0 +1,52 @@
+.field {
+  display: flex;
+  position: relative;
+
+  @include onMobile {
+    flex-direction: column;
+  }
+
+  &__label,
+  &__input {
+    width: 50%;
+    height: 5rem;
+
+    @include onMobile {
+      width: 100%;
+    }
+  }
+
+  &__label {
+    line-height: 5rem;
+  }
+
+  &__input {
+    padding: 0 10px;
+    border: 1px solid $c-gray;
+
+    &:focus {
+      border-color: $c-main;
+    }
+  }
+
+  &__wrn {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: -1.2rem;
+    font-size: 1rem;
+    color: $c-wrtn;
+  }
+
+  &--err {
+    .field {
+      &__input {
+        border-color: $c-wrtn;
+      }
+
+      &__wrn {
+        display: block;
+      }
+    }
+  }
+}

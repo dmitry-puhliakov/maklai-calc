@@ -1,7 +1,7 @@
 {
-  "name": "simle-gulp-template",
+  "name": "maklai-calc",
   "version": "1.0.0",
-  "description": "Simple Gulp template by d.puhliakov",
+  "description": "Simple calculator by d.puhliakov",
   "main": "index.html",
   "scripts": {
     "start": "gulp",

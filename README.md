@@ -1,18 +1,14 @@
-# Simple Gulp template v.1.0.0
-Simple gulp template will help with frontend projects.
+# Simple calculator
+Simple calculator resolving according to next task
 
-List of plugins were used:
-- browser-sync,
-- del,
-- gh-pages,
-- gulp,
-- gulp-autoprefixer,
-- gulp-clean-css,
-- gulp-file-include,
-- gulp-group-css-media-queries,
-- gulp-imagemin,
-- gulp-newer,
-- gulp-rename,
-- gulp-sass,
-- gulp-uglify-es,
-- sass.
+### Task description
+- необхідно створити форму в якій буде 2 інпута для чисел і один селект для математичної операції (+,-,*,/)
+- по сабміту форми користувач має побачити результат
+- результат має бути завжди цілим числом
+- додади лейбли до полів вводу та анотації, щоб було інтуітивно зрозуміло що робити.
+
+---
+
+### Result
+- Stack of technologies: HTML5, SCSS, BEM, JS.
+- [DEMO LINK](https://dmitry-puhliakov.github.io/maklai-calc/)

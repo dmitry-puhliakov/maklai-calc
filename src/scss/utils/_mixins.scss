@@ -7,3 +7,9 @@
     font-style: #{$style};
   }
 }
+
+@mixin onMobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}

@@ -1,0 +1,84 @@
+.calc {
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  background-color: $c-bg;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__field {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    margin-bottom: 20px;
+    text-align: center;
+
+    button {
+      height: 5rem;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      width: 30%;
+      border: 1px solid $c-main;
+      background-color: $c-main;
+      color: $c-bg;
+
+      @include onMobile {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px;
+      }
+
+      &:hover {
+        background-color: $c-bg;
+        color: $c-main;
+      }
+
+      &:active {
+        background-color: $c-main;
+        color: $c-bg;
+      }
+    }
+
+    button[type="button"] {
+      padding: 0 2rem;
+      border: 1px solid $c-gray;
+      background-color: $c-light-gray;
+      color: $c-gray;
+
+      @include onMobile {
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+
+      &:hover {
+        border: 1px solid $c-main;
+        color: $c-main;
+      }
+
+      &:active {
+        background-color: $c-light;
+      }
+    }
+  }
+
+  &__result {
+    width: 100%;
+    height: 5rem;
+    padding: 0 10px;
+    background-color: $c-light;
+    border: 1px solid $c-gray;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+    text-align: right;
+  }
+}

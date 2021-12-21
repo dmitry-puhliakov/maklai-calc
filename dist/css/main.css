@@ -1,0 +1,449 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select {
+  outline: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-ThinItalic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-MediumItalic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-BoldItalic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Roboto-BlackItalic.woff2") format("woff2"), url("../fonts/Roboto/Roboto-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+label,
+input,
+select,
+option,
+button {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+* {
+  color: #1a2e53;
+}
+
+html {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background: antiquewhite;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.calc {
+  max-width: 700px;
+  width: 100%;
+  padding: 20px;
+  background-color: #d9f2fd;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.calc__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.calc__field {
+  margin-bottom: 20px;
+}
+
+.calc__btn {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.calc__btn button {
+  height: 5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.calc__btn button[type=submit] {
+  width: 30%;
+  border: 1px solid #1a2e53;
+  background-color: #1a2e53;
+  color: #d9f2fd;
+}
+
+.calc__btn button[type=submit]:hover {
+  background-color: #d9f2fd;
+  color: #1a2e53;
+}
+
+.calc__btn button[type=submit]:active {
+  background-color: #1a2e53;
+  color: #d9f2fd;
+}
+
+.calc__btn button[type=button] {
+  padding: 0 2rem;
+  border: 1px solid #acacac;
+  background-color: #eee;
+  color: #acacac;
+}
+
+.calc__btn button[type=button]:hover {
+  border: 1px solid #1a2e53;
+  color: #1a2e53;
+}
+
+.calc__btn button[type=button]:active {
+  background-color: #fff;
+}
+
+.calc__result {
+  width: 100%;
+  height: 5rem;
+  padding: 0 10px;
+  background-color: #fff;
+  border: 1px solid #acacac;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 5rem;
+  text-align: right;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.field__label,
+.field__input {
+  width: 50%;
+  height: 5rem;
+}
+
+.field__label {
+  line-height: 5rem;
+}
+
+.field__input {
+  padding: 0 10px;
+  border: 1px solid #acacac;
+}
+
+.field__input:focus {
+  border-color: #1a2e53;
+}
+
+.field__wrn {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -1.2rem;
+  font-size: 1rem;
+  color: #da5050;
+}
+
+.field--err .field__input {
+  border-color: #da5050;
+}
+
+.field--err .field__wrn {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .calc__btn button[type=submit] {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .calc__btn button[type=button] {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .field__label,
+  .field__input {
+    width: 100%;
+  }
+}
